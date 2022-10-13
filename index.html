@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="con">
+        <div class="sidebar">
+            <div class="image">
+                <img id="odin" src="odin-lined.png" alt="Odin">
+                ODIN
+            </div>
+            <div class="footer">
+                Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyTex">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="top">
+                <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dream.</p>
+                <p class="text">Sign up <em>now</em> to get started</p>
+                <br>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <form id="fm">
+                <fieldset form="fm">
+                    <div class="fm-text">
+                        <h3>Let's do this!</h3>
+                    </div>
+                    <div class="form">
+                        <div class="part">
+                            <div class="cell">
+                                <label for="f_name">First Name</label>
+                                <input type="text" name="f_name" id="f_name" required>
+                            </div>
+                            <div class="cell">
+                                <label for="l_name">Last Name</label>
+                                <input type="text" name="l_name" id="f_name" required>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <div class="cell">
+                                <label for="mail">Email</label>
+                                <input type="email" name="mail" id="mail" required>
+                            </div>
+                            <div class="cell">
+                                <label for="phone">Phone Number</label>
+                                <input type="number" name="phone" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <div class="cell">
+                                <label for="pw">Password</label>
+                                <input type="password" name="pw" id="pw" required value="">
+                                <p class="error-msg"></p>
+                            </div>
+                            <div class="cell">
+                                <label for="cpw">Confirm Password</label>
+                                <input type="password" name="cpw" id="cpw" required value=""> 
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" id="sub">Create Account</button>
+            </form>
+            <div class="low">
+                <p>Already have an account? <a href="" style="color:#596D48; text-decoration:none; font-weight: 600;">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

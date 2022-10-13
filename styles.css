@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: rgba(228, 236, 226, 0.87);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@font-face{
+    font-family:Norse;
+    src:url(./Norse-Bold.otf);
+}
+
+.con{
+display: flex;
+flex: 1;
+}
+
+.sidebar{
+    width: clamp(400px,45%,600px);
+    background-image:url('halie-west-25xggax4bSA-unsplash.jpg');
+    flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+#odin{
+    height: 150px;
+    width: 150px;
+}
+
+.image{
+    background-color:rgb(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    font-size: 3rem;
+    font-family: Norse, sans-serif;
+    color: white;
+}
+.footer{
+    padding-bottom: 10px;
+    font-size: 0.65rem;
+    text-align: center;
+    color: white;
+}
+
+.text{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    min-width: 100vh;
+    flex: 1;
+}
+
+fieldset{
+    display: flex;
+    padding-top: 10px;
+    gap: 10px;
+    border: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 5px 8px rgba(134, 126, 126, 0.7);
+    justify-content: center;
+}
+.form{
+    padding: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50px;
+    font-size: 0.8rem;
+    
+}
+button{
+    margin:25px ;
+    padding: 10px;
+    background-color: #596D48;
+    color: aliceblue;
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor:pointer;
+    outline: none !important;
+    border: none;
+    box-shadow: 0px 4px 4px  rgba(186, 183, 183);
+}
+
+button:hover{
+    background-color: #84a765;
+}
+input:focus{
+    outline: none !important;
+    border:1px #1f74ce solid;
+    box-shadow: 1px 3px 3px rgba(186, 183, 183, 0.7);
+    padding: 0px;
+}
+
+.top,.low{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.low{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input{
+    border-radius:8px ;
+    border:1px solid #e5e7eb;
+    width: 250px;
+    height: 25px;
+}
+
+.part{
+    display: flex;
+    gap: 40px;
+    
+    
+}
+.cell{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.fm-text{
+    padding-left:30px ;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.error-msg{
+    font-size: 0.7rem;
+    color: red;
+}
+.footer a{
+    color: white;
+}
+.top{
+   width:  clamp(400px, 80%, 75ch);
+}
+
+.error{
+    font-size: 0.7rem;
+    color: red;
+    border:1px red solid;
+}
+
+h2{
+    margin-bottom: 20px;
+}
